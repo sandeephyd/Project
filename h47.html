@@ -1,0 +1,57 @@
+<!-- applicaton with iframe and menubar (hyperlink) -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex46</title>
+	<style>
+		/* menu bar designing */
+		#menubar{			
+			width:160px;
+			height:700px;
+			background-color:#6b6b6b;
+			text-align:center;
+			float:left;
+		}
+		/* content box designing */
+		#content{
+			width:85%;
+			height:700px;
+			margin-left:10px;
+			background:#ccffcc;		
+			float:left;	
+		}
+		/* menus designing */
+		a{
+			font-size:22px;
+			text-decoration:none;
+			display:inline-block;
+			width:150px;
+			color:#fde302;
+		}
+		a:hover{
+			color:#04fd11;
+		}
+		iframe{
+			width:100%;
+			height:100%;
+		}
+	</style>
+ </head>
+ <body>
+	<!-- vertical menu bar -->
+	<div id="menubar">
+			<a href="h12.html" target="mf">Html Colors</a>
+			<a href="h16.html" target="mf">UnOrder List</a>
+			<a href="h21.html" target="mf">Grid Layout</a>
+			<a href="h24.html" target="mf">Tables</a>
+			<a href="h28.html" target="mf">Text Fields</a>
+	</div>
+	<!-- content -->
+
+	<div id="content">
+		<iframe name="mf" src="h12.html" frameborder> </iframe>
+	</div>
+ </body>		
+</html>					 
+	
+							

@@ -1,0 +1,31 @@
+<!-- example on "input" tag -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex38</title>
+ </head>
+ <body>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		 <h2>demo on file uploading </h2>
+		<input type="file" id="file1" name="file1"/> <!-- only 1file, but any type -->
+		<br>
+		<input type="file" id="file2" name="file2" multiple/> <!-- no.of files, but any type -->
+		<br>
+		<input type="file" id="file3" name="file3" accept=".pdf,.docx"/> <!-- only 1file, pdf & docx file only -->
+																			<!-- accpet="image/*"		or    accept="audio/*"   -->
+		<button>Upload Files</button>
+	</form>
+	<script>
+  	  var fileobj = document.getElementById("file3");
+		fileobj.onchange = function() {
+			if(this.files[0].size > 5242880){		//max limit => 5mb (52,42,880 bytes)
+			   alert("File is too big!");
+			   this.value = "";
+			};
+		};
+	</script>
+
+	</form>
+ </body>		
+</html>		 
+ 

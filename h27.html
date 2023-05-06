@@ -1,0 +1,45 @@
+<!--  example on "input" tag   -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex27</title>
+ </head>
+ <body>
+	<h2>demo on  text fields</h2>
+ 	<input/>		<!-- by defualt it creates text field -->
+	<input type="text" autofocus/>
+	<br>
+	<!-- setting id & name -->
+	<input type="text" id="firstName" name="fna"/>
+	<br>
+	<!-- setting prompting message to user -->
+	<input type="text" id="phone" name="ph" placeholder="enter contact number"/>
+	<br>
+	<!-- setting length of text field -->
+	<input type="text" id="emailid" name="mid" size="50"/>
+	<br>
+	<!-- setting data limit (no.of characters) -->
+	<input type="text" id="age" name="age" maxlength="3"/>
+	<br>
+	<!-- setting mandatory(*) option -->
+	<input type="text" id="a" name="a" required/>
+	<br>
+	<!-- setting default value -->
+	<input type="text" id="b" name="b" value="pizza"/>
+	<br>
+	<!-- not allowing to modify the data -->
+	<input type="text" id="c" name="c" value="hyderabad" readonly/>
+
+ </body>		
+</html>		
+	<!-- id  ==> unique name for html elements (output & input)
+				==> used for impl client side coding, ex JS
+				==> used for applying styles 
+			Ex:		firstName.value
+
+		  name ==> name for input elements (unique or not)
+					 ==> used for impl server side coding, ex Servlet, JSP
+			Ex:		request.getParameter("fna")
+		-->
+
+	

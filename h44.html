@@ -1,0 +1,22 @@
+<!-- example on output tag -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex44</title>
+ </head>
+ <body>
+	<h2>demo on displaying dynamic data</h2>
+	<output>Hello world</output>
+	<output id="res"> </output>
+	<button onclick="res.value='welcome'">Click press</button>
+	<br>
+	<output id="dt"> </output>
+	<button onclick="dt.value=new Date()">Show Date</button>
+	<hr>
+	 <input type="range" id="r1"/>  <!-- min-0, max-100, value-50 -->
+	<br>
+	 <input type="range" id="r2" min="2000" max="10000" value="3500" onchange="result.value=r2.value" style="width:300px;"/> 
+	 <output id="result"> </output>
+	
+ </body>		
+</html>					 

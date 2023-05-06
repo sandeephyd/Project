@@ -1,0 +1,27 @@
+<!-- example on "input" tag -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex31</title>
+ </head>
+ <body>
+	<h2>demo on buttons</h2>
+ 	<input type="button" id="b1" value="Click here" onclick="alert('Welcome')"/>
+
+ 	<input type="button" id="b2" value="Press here" onclick="printTri()"/>
+	
+	<script>
+		function printTri()
+		{
+			for(i=1; i<=10; i++)
+			{
+				for(j=1; j<=i; j++)
+					document.write("*&nbsp;");
+				document.write("<br>");
+			}
+		}
+	</script>
+															
+ </body>		
+</html>		 
+					 

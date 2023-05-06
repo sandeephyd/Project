@@ -1,0 +1,86 @@
+<!--  example on tables  -->
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex24</title>
+	<style>
+		table{
+			width:40%;
+			font-size:20px;
+			border-collapse:collapse;	/* it removes/destroyed internal border */
+		}
+		tr{
+			border-top:2px solid #ff00cc;
+			/* border-bottom:2px solid #ff00cc; */
+		}
+
+		/* nth-child() => used to apply styles on specific rows or cols
+							tag-name:nth-child(r-num/c-num) {
+										......
+							}	
+					Note: tag-name means either tr or td or th */
+		tr:nth-child(even) {		/* it applies on all even rows */
+			background:#ffffcc; 
+		}
+		tr:nth-child(odd) {		/* it applies on all odd rows */
+			background:#99ff99; 
+		}
+		tr:nth-child(1) {			/* it applies on 1st row (headings row) */
+			background:#3300ff;
+			color:white;
+			font-size:22px;
+		}
+		tr:nth-child(2) {			/* it applies on 1st row (headings row) */
+			background:#ff9900;
+			color:white;
+		}
+		tr:hover{
+			background:black;
+			color:white;
+		}
+		td:nth-child(6){
+			text-align:right;
+		}
+	</style>
+ </head>
+ <body>
+	<h2>demo on css tables </h2>
+
+	<table align="center">	 
+		<tr> 
+			<th> </th>  <th>Country</th> <th>Gold</th> <th>Silver</th> <th>Bronze</th> <th>Total</th>
+		</tr>
+		<tr>
+			<td>65</td> <td>India</td> <td>0</td> <td>2</td> <td>3</td> <td>5</td>
+		</tr>
+		<tr>
+			<td>1</td> <td>China</td> <td>34</td> <td>24</td> <td>16</td> <td>74</td>
+		</tr>
+		<tr>
+			<td>2</td> <td>United States</td> <td>30</td> <td>35</td> <td>27</td> <td>	92</td>
+		</tr>
+		<tr>
+			<td>3</td> <td>Japan</td> <td>22</td> <td>10</td> <td>15</td> <td>47</td>
+		</tr>
+		<tr>
+			<td>4</td> <td>Australia</td> <td>17</td> <td>6</td> <td>20</td> <td>43</td>
+		</tr>
+		<tr>
+			<td>5</td> <td>ROC</td> <td>16</td> <td>23</td> <td>21</td> <td>60</td>
+		</tr>
+		<tr>
+			<td>6</td> <td>Great Britain</td> <td>16</td> <td>18</td> <td>18</td> <td>52</td>
+		</tr>
+		<tr>
+			<td>7</td> <td>Germany</td> <td>9</td> <td>10</td> <td>16</td> <td>35</td>
+		</tr>
+		<tr>
+			<td>8</td> <td>France</td> <td>7</td> <td>11</td> <td>9</td> <td>27</td>
+		</tr>
+		<tr>
+			<td>9</td> <td>Italy</td> <td>7</td> <td>10</td> <td>18</td> <td>35</td>
+		</tr>
+	</table>	 
+
+ </body>
+</html>			

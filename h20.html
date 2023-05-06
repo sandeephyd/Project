@@ -1,0 +1,84 @@
+<!--  example on div tag 
+	display:grid;	
+				this arragening elements in tabler format (rows & cols)
+				grid option should be applied on outer div tags only (mean nested divs must) -->
+
+<!DOCTYPE html>
+<html lang="en">		 
+ <head>
+	<title>Ex20</title>
+ </head>
+ <body>
+	<h2>demo on div with grid</h2>
+														<!-- grid-template-columns:auto auto; ==> 2cols with equals size
+																grid-template-columns:auto auto auto; ==> 3cols with equals size	-->
+<!-- creating 2X3 grid, 3cols with same size -->
+	<div style="display:grid; grid-template-columns:auto auto auto;"> <!-- it applies grid on inner div tags -->
+		<div style="background:#ff0066; ;">
+			<h1>box1</h1>
+		</div> 											 
+		<div style="background:#0033ff; ">
+			<h1>box2 </h1>
+		</div>
+		<div style="background:#00cc00;">
+			<h1>box3</h1>
+		</div>
+		<div style="background:#006600; ">
+			<h1>box4</h1>
+		</div> 		
+		<div style="background:#cc00ff;">
+			<h1>box5</h1>
+		</div>
+		<div style="background:#ccff00">
+			<h1>box6</h1>
+		</div> 		 
+	</div>		
+	<br> <bR>
+	<!-- 2X3 grid, 3cols with different sizes -->
+	<div style="display:grid; grid-template-columns:300px 200px 400px;"> <!-- it applies grid on inner div tags -->
+		<div style="background:#ff0066; ;">
+			<h1>box1</h1>
+		</div> 											 
+		<div style="background:#0033ff; ">
+			<h1>box2 </h1>
+		</div>
+		<div style="background:#00cc00;">
+			<h1>box3</h1>
+		</div>
+		<div style="background:#006600; ">
+			<h1>box4</h1>
+		</div> 		
+		<div style="background:#cc00ff;">
+			<h1>box5</h1>
+		</div>
+		<div style="background:#ccff00">
+			<h1>box6</h1>
+		</div> 		 
+	</div>		
+	<br> <br>
+
+	<!-- 2X4 grid, 2cols with custom size, 2cols with same size -->
+	<div style="display:grid; grid-template-columns:300px auto 300px auto;"> <!-- it applies grid on inner div tags -->
+		<div style="background:#ff0066; ;">
+			<h1>box1</h1>
+		</div> 											 
+		<div style="background:#0033ff; ">
+			<h1>box2 </h1>
+		</div>
+		<div style="background:#00cc00;">
+			<h1>box3</h1>
+		</div>
+		<div style="background:#006600; ">
+			<h1>box4</h1>
+		</div> 		
+		<div style="background:#cc00ff;">
+			<h1>box5</h1>
+		</div>
+		<div style="background:#ccff00">
+			<h1>box6</h1>
+		</div> 		 
+	</div>		
+ </body>
+</html>			
+			 
+ 
